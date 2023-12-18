@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Создание записи</title>
+    <link rel="stylesheet" href="/static-files/main.css">
+    <link rel="stylesheet" href="/static-files/createnote.css">
+</head>
+<body>
+
+<h1 class="header"> Создать анонимную запись </h1>
+<form class="form" action="/create_note" method="post">
+
+        <!-- Блок title -->
+        <div class="input-block">  <!-- div это блок -->
+            <span>Title:</span>
+            <div>
+                <input class="input-form" name="title" type="text">
+            </div>
+        </div>
+
+        <!-- Блок content -->
+        <div class="input-block">
+            <span>Content:</span>
+            <div>
+                <input class="input-form" name="content" type="text">
+            </div>
+        </div>
+
+        <!-- Блок кнопки -->
+        <div class="input-block">
+            <input class="form-button" type="submit" value="Submit">
+        </div>
+
+
+</body>
+</html>
